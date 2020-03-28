@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block app_content %}
+    <h1>{{ _('Hello, %(username)s!', username=current_user.username) }}</h1>
+    {% if form %}
+    {{ wtf.quick_form(form) }}
+    <br>
+    {% endif %}
+
+    {% if emps %}
+    <form action="/simple">
+     <table class="tblBorder", border="black">
+        <thead>
+        <caption> Testing how to make a table</caption>
+        <tr valign="top">
+            <th width="15"> Name </th>
+            <th width="10"> Employee ID </th>
+            <th width="25"> Email </th>
+            <th width="15"> PG </th>
+            <th width="5"> SR </th>
+            <th width="5"> SR Change</th>
+            <th width="5"> Comment</th>
+            <th width="20"> Save</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for emp in emps %}
+         <tr valign = "top">
+            <td>{{emp.name}}</td>
+            <td>{{emp.employeeid}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.ProductGroup}}</td>
+            <td>{{emp.SectorRank}}</td>
+            <td><input type="text" name="SectorRanknew" value="{{emp.SectorRanknew}}"</td>
+            <td><input type="text" name="emp.comments" </td>
+            <td><button type="submit" value="Submit">Save</button></td>
+        </tr>
+        {% endfor %}
+         </tbody>
+    </table>
+    </form>
+    {% endif %}
+
+
+{% endblock %}

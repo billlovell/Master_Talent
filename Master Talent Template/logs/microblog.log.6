@@ -1,0 +1,60 @@
+2020-02-20 12:48:47,724 ERROR: Exception on /edit [POST] [in c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\LovellWi\PycharmProjects\microblog\app\main\routes.py", line 161, in edit
+    employee = Employee(employeeid=form.employeeid.data, sectorranknew=form.sectorranknew.data, comments=form.comments.data )
+AttributeError: 'EmpForm1' object has no attribute 'sectorranknew'
+2020-02-20 12:50:22,513 INFO: Microblog startup [in C:\Users\LovellWi\PycharmProjects\microblog\app\__init__.py:74]
+2020-02-20 12:50:36,385 ERROR: Exception on /edit [POST] [in c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\LovellWi\PycharmProjects\microblog\app\main\routes.py", line 162, in edit
+    db.session.update(employee)
+AttributeError: 'scoped_session' object has no attribute 'update'
+2020-02-20 12:51:58,371 INFO: Microblog startup [in C:\Users\LovellWi\PycharmProjects\microblog\app\__init__.py:74]
+2020-02-20 12:52:09,456 ERROR: Exception on /edit [POST] [in c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py:1890]
+Traceback (most recent call last):
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask\app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\lovellwi\pycharmprojects\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\LovellWi\PycharmProjects\microblog\app\main\routes.py", line 162, in edit
+    db.session.update(employee)
+AttributeError: 'scoped_session' object has no attribute 'update'
+2020-02-20 12:54:08,100 INFO: Microblog startup [in C:\Users\LovellWi\PycharmProjects\microblog\app\__init__.py:74]
